@@ -3,7 +3,7 @@ class Triangle
 
   attr_accessor :right_side, :left_side,:buttom
 
-  def initialize (right_side:,left_side:,buttom:)
+  def initialize
     @right_side = right_side
     @left_side = left_side
     @buttom = buttom
@@ -13,9 +13,9 @@ class Triangle
      if @left_side != @right_side && @right_side != @buttom
         raise TriangleError
      else
-       if@left_side == @right_side && @right_side == @buttom
+       @left_side == @right_side && @right_side == @buttom
          :equilateral
-       end
+       
      end
   end
 
