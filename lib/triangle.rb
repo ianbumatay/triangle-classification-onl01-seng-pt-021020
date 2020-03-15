@@ -6,11 +6,12 @@ class Triangle
     @buttom = buttom
   end
 
-  def kind(:equilateral)
-   if :equilateral => left_side != right_side && right_side != buttom
+  def kind
+   if left_side != right_side && right_side != buttom
       raise TriangleError
    else
-     :equilateral => left_side == right_side && right_side == buttom
+     left_side == right_side && right_side == buttom
+     :equilateral
    end
  end
 
