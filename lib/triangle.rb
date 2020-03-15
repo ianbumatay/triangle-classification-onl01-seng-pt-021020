@@ -3,8 +3,7 @@ class Triangle
 
   attr_accessor :right_side, :left_side,:buttom
 
-  def initialize(name)
-    @name = name
+  
 
   end
 
