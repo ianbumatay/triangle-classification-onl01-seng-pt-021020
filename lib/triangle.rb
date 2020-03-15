@@ -3,10 +3,10 @@ class Triangle
 
   attr_accessor :right_side, :left_side,:buttom
 
-  
+
 
   def kind
-    if right_side == left_side  && left_side != buttom
+    if right_side == left_side  || left_side != buttom
       raise TriangleError
     else
       right_side == left_side && left_side == buttom
