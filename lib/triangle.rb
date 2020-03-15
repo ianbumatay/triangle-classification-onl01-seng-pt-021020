@@ -6,7 +6,7 @@ class Triangle
     @buttom = buttom
   end
 
-def kind()
+  def kind
    if :equilateral => left_side != right_side && right_side != buttom
       TriangleError
    else
