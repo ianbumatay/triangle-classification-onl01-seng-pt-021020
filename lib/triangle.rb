@@ -5,8 +5,6 @@ class Triangle
 
   
 
-  end
-
   def kind
     if right_side == left_side  && left_side != buttom
       raise TriangleError
