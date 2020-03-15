@@ -7,10 +7,10 @@ class Triangle
   end
 
   def kind
-     if left_side != right_side && right_side != buttom
+     if @left_side != @right_side && @right_side != @buttom
       raise TriangleError
      else
-       left_side == right_side && right_side == buttom
+       @left_side == @right_side && @right_side == @buttom
        :equilateral
      end
   end
