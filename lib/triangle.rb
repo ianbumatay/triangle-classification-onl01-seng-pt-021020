@@ -1,6 +1,9 @@
 class Triangle
   # write code here
-  def initialize :right_side, :left_side, :buttom
+
+  attr_accessor :right_side, :left_side,:buttom
+
+  def initialize (right_side:,left_side:,buttom:)
     @right_side = right_side
     @left_side = left_side
     @buttom = buttom
@@ -8,14 +11,14 @@ class Triangle
 
   def kind
      if @left_side != @right_side && @right_side != @buttom
-      raise TriangleError
+        raise TriangleError
      else
        @left_side == @right_side && @right_side == @buttom
-       :equilateral
+         :equilateral
      end
   end
-end
 
 
-class TriangleError < StandardError
+  class TriangleError < StandardError
+  end
 end
