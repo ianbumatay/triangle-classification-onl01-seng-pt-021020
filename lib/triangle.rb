@@ -5,12 +5,15 @@ class Triangle
 
   def initialize(name)
     @name = name
-  
+
   end
 
-  def kind(:equilateral)
+  def kind
     if right_side == left_side  && left_side != buttom
       raise TriangleError
+    else
+      right_side == left_side && left_side == buttom
+      :equilateral
     end
   end
 
