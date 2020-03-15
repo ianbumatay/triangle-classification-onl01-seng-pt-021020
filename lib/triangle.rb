@@ -10,8 +10,9 @@ class Triangle
    if left_side != right_side && right_side != buttom
       raise TriangleError
    else
-     left_side == right_side && right_side == buttom
-     :equilateral
+     if left_side == right_side && right_side == buttom
+        :equilateral
+      end
    end
  end
 
